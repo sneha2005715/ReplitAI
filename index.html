@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Snehanjali</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById("mobileNav");
+            nav.style.display = nav.style.display === "flex" ? "none" : "flex";
+        }
+    </script>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">Snehanjali</div>
+
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    </header>
+
+    <!-- MOBILE NAV -->
+    <div id="mobileNav" class="mobile-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <h1>Hello, I'm Snehanjali 👋</h1>
+        <p>I'm a passionate web developer and tech enthusiast who loves creating clean and responsive user experiences.</p>
+        <button>Contact Me</button>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills" id="skills">
+        <h2>My Skills</h2>
+
+        <div class="skills-grid">
+            <div class="skill-box">HTML</div>
+            <div class="skill-box">CSS</div>
+            <div class="skill-box">JavaScript</div>
+            <div class="skill-box">Python</div>
+            <div class="skill-box">Java</div>
+            <div class="skill-box">React Basics</div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contact">
+        <p>Connect with me:</p>
+        <a href="#">LinkedIn</a>
+        <a href="#">GitHub</a>
+        <a href="#">Twitter</a>
+
+        <p style="margin-top: 10px;">© 2025 Snehanjali | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
